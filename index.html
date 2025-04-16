@@ -1,0 +1,52 @@
+
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+            body {
+                background-color: floralwhite;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="icon1" src="img/Icon 1icons .png" height="200" width="200" onmouseover="this.src='img/icon 1 alticons.png';" onmouseout="this.src='img/icon 1icons .png';"/></div>
+            <div class="image-container"><img id="icon2" src="img/icon 2icons .png" height="200" width="200" onmouseover="this.src='img/icon 2 alticons.png';" onmouseout="this.src='img/icon 2icons .png';"/></div>
+            <div class="image-container"><img id="icon3" src="img/icon 3icons .png" height="200" width="200" onmouseover="this.src='img/icon 3 alticons.png';" onmouseout="this.src='img/icon 3icons .png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="icon4" src="img/icon 4icons.png" height="200" width="200" onmouseover="this.src='img/icon 4 alticons.png';" onmouseout="this.src='img/icon 4icons.png';"/></div>
+            <div class="image-container"><img id="icon5" src="img/icon 5icons .png" height="200" width="200" onmouseover="this.src='img/icon 5 alticons .png';" onmouseout="this.src='img/icon 5icons .png';"/></div>
+            <div class="image-container"><img id="icon6" src="img/icon 6icons .png" height="200" width="200" onmouseover="this.src='img/icon 6 alticons .png';" onmouseout="this.src='img/icon 6icons .png';"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="icon7" src="img/icon 7icons .png" height="200" width="200" onmouseover="this.src='img/icon 7 alticons .png';" onmouseout="this.src='img/icon 7icons .png';"/></div>
+            <div class="image-container"><img id="icon8" src="img/icon 8icons .png" height="200" width="200" onmouseover="this.src='img/icon 8 alticons .png';" onmouseout="this.src='img/icon 8icons .png';"/></div>
+            <div class="image-container"><img id="icon9" src="img/icon 9icons .png" height="200" width="200" onmouseover="this.src='img/icon 9 alticons .png';" onmouseout="this.src='img/icon 9icons .png';"/></div>
+        </div>
+        <script>
+            
+            var sound1 = new buzz.sound("sound/click1.mp3");
+
+    window.onload = function() {
+        document.getElementById('icon7').addEventListener('mouseover',function(){sound1.play();});
+    };
+        </script>
+    </body>
+    
+</html>
